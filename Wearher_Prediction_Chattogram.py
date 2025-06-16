@@ -1,11 +1,31 @@
-﻿import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 import pandas as pd
 from datetime import datetime
 import numpy as np
+import os
 
-# Load the historical weather data
-df = pd.read_csv("Chittagong Weather Data 2010-01-01 to 2022-08-22.csv")
-df['datetime'] = pd.to_datetime(df['datetime'], format="%m/%d/%Y")
+# Set the correct path to your CSV file
+project_path = r"D:\New folder (6)\Wearher Prediction Chattogram\Wearher Prediction Chattogram"
+csv_filename = "Chittagong Weather Data 2010-01-01 to 2022-08-22.csv"
+csv_path = os.path.join(project_path, csv_filename)
+
+# Verify the file exists
+if not os.path.exists(csv_path):
+    print(f"Error: File not found at {csv_path}")
+    print("Please verify:")
+    print("1. The file exists in the project folder")
+    print("2. The filename is exactly:", csv_filename)
+    print("\nFiles found in your project folder:")
+    print(os.listdir(project_path))
+    exit()
+
+# Load the historical weather data with error handling
+try:
+    df = pd.read_csv(csv_path)
+    df['datetime'] = pd.to_datetime(df['datetime'], format="%m/%d/%Y")
+except Exception as e:
+    print(f"Error loading data: {str(e)}")
+    exit()
 
 def predict_weather(date_str):
     try:
@@ -22,7 +42,7 @@ def predict_weather(date_str):
         else:
             # Estimate based on historical data from same MM-DD
             same_day_data = df[(df['datetime'].dt.month == input_date.month) &
-                               (df['datetime'].dt.day == input_date.day)]
+                              (df['datetime'].dt.day == input_date.day)]
 
             if same_day_data.empty:
                 print("No historical data to estimate this future date.")
@@ -66,7 +86,8 @@ def predict_weather(date_str):
     except ValueError:
         print("Invalid date format. Please use MM-DD-YYYY format.")
 
-# Run it
-print("Chattogram Weather Forecast (Historical-based Prediction)")
-date_input = input("Enter a date (MM-DD-YYYY): ")
-predict_weather(date_input)
+# Main program
+if __name__ == "__main__":
+    print("Chattogram Weather Forecast (Historical-based Prediction)")
+    date_input = input("Enter a date (MM-DD-YYYY): ")
+    predict_weather(date_input)
