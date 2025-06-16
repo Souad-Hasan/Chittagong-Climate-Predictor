@@ -103,7 +103,7 @@ Required Columns:
 5. Open a pull request
 
  📜 License
-MIT License - See [LICENSE](LICENSE) for details
+MIT License - See [LICENSE](https://github.com/Souad-Hasan/Chittagong-Climate-Predictor/blob/ee18594b69c0aa9f26bd5c9cda9c018c0b015950/MIT%20license.txt) for details
 
 ---
 
