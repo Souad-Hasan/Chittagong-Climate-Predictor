@@ -2,7 +2,7 @@
 
 _A Python-based tool for analyzing and predicting weather patterns in Chattogram, Bangladesh using historical data (2010-2022)._
 
-![image alt(image_url)]
+![Image alt(image_url)]
 
  📖 Table of Contents
 - [Features](-features)
