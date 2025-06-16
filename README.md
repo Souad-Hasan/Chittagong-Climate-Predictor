@@ -109,32 +109,3 @@ MIT License - See [LICENSE](LICENSE) for details
 
 Dataset Source: [Kaggle - Chittagong Weather Data](https://www.kaggle.com/datasets/hasibalmuzdadid/chittagong-weather-data-2010-2022)
 ```
-
- Companion Files You Should Create:
-
-1. requirements.txt:
-   ```text
-   pandas>=1.0.0
-   matplotlib>=3.0.0
-   numpy>=1.18.0
-   ```
-
-2. .gitignore:
-   ```text
-   __pycache__/
-   .pyc
-   .DS_Store
-   data/private_.csv
-   ```
-
-3. Sample Directory Structure:
-   ```
-   .
-   ├── data/
-   │   └── Chittagong Weather Data 2010-01-01 to 2022-08-22.csv
-   ├── docs/
-   ├── weather_predictor.py
-   ├── README.md
-   ├── requirements.txt
-   └── LICENSE
-   ```
