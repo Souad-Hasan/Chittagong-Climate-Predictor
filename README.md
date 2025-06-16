@@ -2,7 +2,7 @@
 
 _A Python-based tool for analyzing and predicting weather patterns in Chattogram, Bangladesh using historical data (2010-2022)._
 
-![image alt(https://github.com/Souad-Hasan/Chittagong-Climate-Predictor/blob/f141a8bf81422e5f58bbf0a9da29a5e90188cbef/sample_output.PNG)]
+![image alt(image_url)]
 
  📖 Table of Contents
 - [Features](-features)
