@@ -1,8 +1,8 @@
  🌦️ Chittagong Weather Predictor
 
-_A Python-based tool for analyzing and predicting weather patterns in Chattogram, Bangladesh using historical data (2010-2022)._
+_A Python-based tool for analyzing and predicting weather patterns in Chattogram, Bangladesh using historical data (2010-2022)
 
-![Image alt(image_url)]
+![image](https://github.com/user-attachments/assets/f7fb36a9-bf79-4038-947a-4e7915c27e4a)
 
  📖 Table of Contents
 - [Features](-features)
