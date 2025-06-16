@@ -1,4 +1,4 @@
-Chittagong Climate Predictor
+**Chittagong Climate Predictor**
 
 🌦️ Overview
 This Python script provides weather information and predictions for Chattogram (Chittagong), Bangladesh using historical weather data from 2010-2022. It can:
